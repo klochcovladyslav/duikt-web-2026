@@ -36,9 +36,13 @@ body {
     font-size: 1.1em;
     font-weight: bold;
 }
-.navbar ul li:hover{
+
+.navbar ul li:hover {
     transform: scale(1.1);
 }
+
 .navbar ul li:hover>a {
+    font-weight: bolder;
+
     text-decoration: underline;
 }
