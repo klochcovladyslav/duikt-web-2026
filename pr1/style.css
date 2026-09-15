@@ -1,11 +1,10 @@
 /* Main page / rules */
 body {
     margin: 0;
-    height: 100vh;
     font-family: 'Courier New', Courier, monospace;
-
 }
-body::-webkit-scrollbar{
+
+body::-webkit-scrollbar {
     display: none;
 }
 
