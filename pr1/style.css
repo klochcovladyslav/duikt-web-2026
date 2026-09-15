@@ -3,13 +3,18 @@ body {
     margin: 0;
     height: 100vh;
     font-family: 'Courier New', Courier, monospace;
+
 }
+
+
 
 img {
     width: 100%;
 }
 
 .navbar {
+    background-color: white;
+
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -96,14 +101,14 @@ img {
 
 /* footer */
 .footer {
+    background-color: white;
+
     display: flex;
     align-items: center;
     justify-content: space-around;
 
-    width: 100vw;
     padding: 15px;
 
-    position: fixed;
     border-bottom: 3px solid black;
     border-top: 3px solid black;
 
@@ -120,7 +125,60 @@ img {
     font-weight: bold;
     transition: 0.3s;
 }
-.footer a:hover{
+
+.footer a:hover {
     text-decoration: underline;
     transform: scale(1.1);
+}
+
+/* ---- */
+
+
+/* Table */
+.table-container {
+
+    padding: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+    width: 100%;
+    font-size: 1.1em;
+}
+
+th,
+td {
+
+    font-weight: bolder;
+    line-height: 1.4;
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: lightskyblue;
+    color: white;
+    font-weight: bold;
+}
+
+
+.lecture-cell {
+    background-color: palegoldenrod;
+}
+
+.subject {
+    font-weight: bold;
+    color: darkslategray;
+}
+
+.auditorium {
+    font-weight: bold;
+}
+
+.teacher {
+    font-style: italic;
+    color: gray;
 }
