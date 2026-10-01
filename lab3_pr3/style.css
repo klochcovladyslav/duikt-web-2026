@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: -0.5px;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+}
+
+.left-bar {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(140, 129, 129); */
+}
+
+
+.main-block {
+    color: black;
+    scrollbar-width: thin;
+    overflow-y: scroll;
+    scrollbar-color: transparent transparent;
+}
+
+
+.main-block:hover {
+    scrollbar-color: grey white;
+}
+
+
+.left-bar ul {
+    padding: 10px;
+    list-style: none;
+    margin: 0px;
+    border-bottom: 1px solid gray;
+}
+
+.left-bar li {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.left-bar li:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.left-bar li a svg {
+    width: 25px !important;
+    height: 25px !important;
+    margin-right: 15px;
+}
+
+#main-li-home {
+    font-weight: bold;
+    background-color: rgb(240, 240, 240);
+}
+
+.left-bar li a {
+    font-size: 1em;
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.top-block {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.google-logo svg {
+    width: 100px !important;
+}
+
+.btn-div {
+    cursor: pointer;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.btn-div:hover {
+    background-color: rgb(240, 240, 240);
+
+}
+
+.btn-div span {
+    width: 20px;
+    height: 2.5px;
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 2px 0px;
+    background-color: black;
+}
