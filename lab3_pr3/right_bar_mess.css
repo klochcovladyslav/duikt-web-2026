@@ -1,0 +1,318 @@
+/* прошу пробачення за те що я зараз скажу, але це спагеті-гавно-код, писав за 1 день все, не було часу нормально розставити, вишмат просто припікає */
+.rigth-bar {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    flex-grow: 1;
+}
+
+.rigth-bar::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.99);
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0px;
+
+}
+
+.cover-two {
+    display: flex;
+    align-items: center;
+    height: 60px;
+
+    padding: 5px;
+}
+
+.header-center {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+
+
+    width: 600px;
+    height: 40px;
+
+    border-radius: 25px;
+    border: 1px solid lightgray;
+    box-shadow: inset 0px 0px 3px lightgrey;
+
+    overflow: hidden;
+}
+
+.header-center form {
+    padding-left: 25px;
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.header-center input {
+    font-size: 1em;
+    background-color: transparent;
+    outline: none;
+    height: 40px;
+    border: none;
+    width: 80%;
+    padding: 0px;
+}
+
+.icon-keyboard {
+    margin: 0px 7px;
+    width: 20px;
+    cursor: pointer;
+
+}
+
+.header-center button {
+
+    box-sizing: content-box;
+    border: none;
+    cursor: pointer;
+
+    border-left: 1px solid lightgray;
+
+    border-radius: 0px 25px 25px 0px;
+    height: 40px;
+    width: 80px;
+
+}
+
+.header-center button:hover {
+    background-color: lightgrey;
+}
+
+.header-center svg {
+    height: 25px !important;
+    width: 25px !important;
+    margin: 0px auto;
+}
+
+#appear_svg {
+    display: none !important;
+    margin: 0px 10px;
+}
+
+.header-center:has(input:focus) #appear_svg {
+    display: block !important;
+
+}
+
+.header-center:focus-within {
+    border: 1px solid darkblue;
+    box-shadow: inset 0px 0px 3px gray;
+
+}
+
+.header-center form:focus-within {
+    padding-left: 0px;
+    width: 90%;
+}
+
+.cover {
+    margin-left: auto;
+    display: flex;
+}
+
+.micro-btn {
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(240, 240, 240);
+    padding: 9px;
+    margin: 0px 10px;
+}
+
+
+/*  */
+
+.header-right {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.header-right span {
+    margin: 0px 10px;
+}
+
+.accaunt {
+    display: flex;
+    cursor: pointer;
+
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.micro-btn:hover {
+    background-color: lightgray;
+}
+
+.create {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 25px;
+    background-color: rgb(240, 240, 240);
+    padding: 7px 15px;
+}
+
+.create:hover {
+    background-color: lightgrey;
+}
+
+.notifications {
+    display: flex;
+    padding: 7px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.notifications:hover {
+    background-color: lightgrey;
+
+}
+
+.create svg {
+    width: 25px !important;
+    height: 25px !important;
+    margin: 0px 5px;
+}
+
+
+.filter-container {
+    display: flex;
+    /* padding: 10px; */
+
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+#chosen-filter {
+    color: white;
+    background-color: black;
+}
+
+.filter-container span {
+    padding: 7px 10px;
+    margin: 0px 7px;
+    border-radius: 7px;
+
+    white-space: nowrap;
+    cursor: pointer;
+
+    background-color: rgb(240, 240, 240);
+}
+
+.filter-container span:hover {
+    background-color: lightgray;
+}
+
+/*  */
+.card {
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 5px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+}
+
+.card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.time {
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 0.9em;
+    border-radius: 7px;
+    right: 10px;
+    bottom: 10px;
+    color: white;
+    padding: 4px 8px;
+    position: absolute;
+}
+
+.cards-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+
+.card:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.text-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-container svg {
+    width: 25px !important;
+    height: 25px !important;
+}
+
+.img-container {
+    display: flex;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+
+
+}
+
+.p-container {
+    margin-top: 10px;
+    max-width: 300px;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+.p-container p {
+
+    margin: 0px;
+
+}
+
+.channel-info {
+    margin-top: 5px !important;
+    color: gray;
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+}
+
+.channel-info svg {
+    width: 10px !important;
+    height: 10px !important;
+    margin: 0px 2px;
+}
+
+.logo {
+    border-radius: 50%;
+    display: flex;
+    overflow: hidden;
+    width: 30px;
+}
