@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    border-collapse: collapse;
+}
+
+span,
+h2,
+h3,
+h1,
+p {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid darkgray;
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type="checkbox"] {
+    accent-color: gray;
+}
+
+body {
+    margin: 0px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weekly-plan-grid {
+
+    display: grid;
+    grid-template-columns: minmax(200px, auto);
+    grid-template-rows: 1fr 6fr;
+
+    border-radius: 5px;
+    border: 4px solid lightgrey;
+}
+
+.top-weekly-plan-grid {
+    display: grid;
+    padding: 5px 0px;
+    grid-template-columns: 1fr 4fr;
+    gap: 30px;
+}
+
+
+.weekly-additions {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.weekly-text {
+    display: flex;
+    align-items: flex-end;
+    font-size: 0.9em;
+    padding: 5px;
+}
+
+.weekly-text h2 {
+    margin: 0px;
+}
+
+.bot-weekly-plan-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: minmax(300px, auto);
+
+}
+
+.to-do {
+    padding: 10px;
+    border-right: 2px solid lightslategray;
+    border-top: 2px solid lightslategray;
+}
+
+.to-do span:first-of-type {
+    display: block;
+    text-align: right;
+}
+
+.to-do h3 {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+.input-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weekday-cards-container {
+    border-collapse: collapse;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+}
+
+.weekday-cards {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+
+    border-right: 2px solid lightslategray;
+    border-top: 2px solid lightslategray;
+}
+
+.weekday-cards-container>.weekday-cards:last-of-type {
+    display: grid;
+    align-items: normal;
+    justify-content: normal;
+    grid-template-rows: auto auto;
+}
+
+
+.weekday-cards input {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.no-border-rigth {
+    border-right: none;
+}
+
+.no-border-top {
+    border-top: none;
+
+}
