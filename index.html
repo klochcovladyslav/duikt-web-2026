@@ -4,17 +4,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мої Роботи</title>
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="./pr5_lb5/style.css">
+    <link rel="stylesheet" href="./pr5_lb5/header.css">
+    <link rel="stylesheet" href="./pr5_lb5/main.css">
+    <link rel="stylesheet" href="./pr5_lb5/footer.css">
+
+    <script src="https://kit.fontawesome.com/deddb86c3b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <ul>
-        <li><a href="./lab_works.html">Лабораторні</a></li>
-        <li><a href="./pr_works.html">Практичні</a></li>
-    </ul>
 
 
 
+    <header>
+        <div class="cover-container">
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li class="header__item"><a class="header__link" href="">Works</a></li>
+                    <li class="header__item"><a class="header__link" href="">Blog</a></li>
+                    <li class="header__item"><a class="header__link" href="">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="main__hello-section">
+            <div class="cover-container main__hello-section__grid">
+                <div class="main__hello-section-left">
+                    <h1 class="main__hello-section-left-h1">Hi, I am Vlad,</br> Fullstack Developer</h1>
+                    <p class="main__hello-section-left-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Earum praesentium voluptas itaque neque
+                        officiis quos optio. Doloribus animi sit iusto voluptate, delectus eius omnis quod. Laborum
+                        earum aspernatur nulla ut!</p>
+                    <button class="main__hello-section-left-btn">Download Resume</button>
+                </div>
+                <div class="main__hello-section-right"><img src="img/my_photo_2.jpg" alt=""></div>
+            </div>
+        </section>
+
+        <section class="main__recent-posts">
+            <div class="cover-container main__recent-posts__grid">
+                <div class="main__recent-posts-left">
+                    <h2>Laboratory works</h2>
+                    <span>homework | lb</span>
+                    <ul>
+                        <li><a href="./lab1/index.html">Лабораторна 1</a></li>
+                        <li><a href="./lab2/lab2.html">Лабораторна 2</a></li>
+                        <li><a href="./lab3_pr3/index.html">Лабораторна 3</a></li>
+                        <li><a href="./lab3_pr3/index.html">Лабораторна 4</a></li>
+                        <li><a href="./lab3_pr3/index.html">Лабораторна 5</a></li>
+                    </ul>
+                </div>
+                <div class="main__recent-posts-right">
+                    <h2>Practical works</h2>
+                    <span>homework | pr</span>
+                    <ul>
+                        <li><a href="./pr1/main.html">Практична 1</a></li>
+                        <li><a href="./lab1/index.html">Практична 2</a></li>
+                        <li><a href="./lab3_pr3/index.html">Практична 3</a></li>
+                        <li><a href="./pr4/index.html">Практична 4</a></li>
+                        <li><a href="./pr5_lb5/index.html">Практична 5</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="main__featured-works">
+            <div class="cover-container main__featured-works__flex">
+
+                <div class="flex-item">
+                    <div class="img-div"><img src="./pr5_lb5/img/1c6bbc0be719e9d93c02a87ba51308ebb0297cdf.png" alt=""></div>
+                    <div class="text-div">
+                        <h2>Designing dashboards</h2>
+                        <span>2020</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quidem dolore similique
+                            recusandae eveniet voluptates fuga voluptatem numquam, et perferendis obcaecati minus
+                            consequuntur eaque, quis cupiditate dolores quisquam reiciendis quod!</p>
+                    </div>
+                </div>
+
+                <div class="flex-item">
+                    <div class="img-div"><img src="./pr5_lb5/img/44dc77996f359e2db24fc4e08bfd61cf50427139.png" alt=""></div>
+                    <div class="text-div">
+                        <h2>Vibrant Portraits of 2020</h2>
+                        <span>2018</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quidem dolore similique
+                            recusandae eveniet voluptates fuga voluptatem numquam, et perferendis obcaecati minus
+                            consequuntur eaque, quis cupiditate dolores quisquam reiciendis quod!</p>
+                    </div>
+                </div>
+
+                <div class="flex-item">
+                    <div class="img-div"><img src="./pr5_lb5/img/a5117cdca561b38768fbe6667854fc00641b25fb.png" alt=""></div>
+                    <div class="text-div">
+                        <h2>36 Days of Malayalam type</h2>
+                        <span>2018</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quidem dolore similique
+                            recusandae eveniet voluptates fuga voluptatem numquam, et perferendis obcaecati minus
+                            consequuntur eaque, quis cupiditate dolores quisquam reiciendis quod!</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="cover-container footer__flex">
+            <div class="footer__flex-container">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <h2>Copyright &#169; 2020 All rights reserved</h2>
+        </div>
+    </footer>
+
+
+    </div>
 </body>
 
 </html>
