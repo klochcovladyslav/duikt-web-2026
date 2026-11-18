@@ -114,8 +114,15 @@ img {
     bottom: 55px;
     left: 350px;
 
+    transition: 0.5s;
+
     transform: rotateY(180deg);
 }
+
+.picachu:hover{
+    transform: rotateY(180deg) rotateZ(360deg);
+}
+
 @keyframes cloudsMoveOne {
     0% {}
 

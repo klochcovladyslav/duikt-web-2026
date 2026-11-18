@@ -1,0 +1,152 @@
+$bg-dark: #2b0b0b;
+$bg-accent: #411c1c;
+$gold-hover: #ff6666;
+$text-light: #ffecec;
+$text-muted: #fee691;
+$font-main: 'Segoe UI', system-ui, sans-serif;
+
+
+@mixin glass-effect($opacity: 0.08) {
+    background: rgba(255, 255, 255, $opacity);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: $font-main;
+    background: radial-gradient(circle at top, $bg-accent, $bg-dark);
+    color: $text-light;
+    line-height: 1.6;
+}
+
+
+.header {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+
+    &__card {
+        @include glass-effect(0.06);
+        max-width: 1200px;
+        padding: 50px 30px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+    }
+
+    &__badge {
+        display: inline-block;
+        padding: 6px 16px;
+        background: rgba($text-light, 0.15);
+        color: $text-light;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        font-size: 2.8rem;
+        margin-bottom: 16px;
+        color: $text-light;
+    }
+
+    &__subtitle {
+        font-size: 1.15rem;
+        color: $text-muted;
+        margin-bottom: 32px;
+    }
+
+    &__btn {
+        display: inline-block;
+        padding: 14px 32px;
+        background: $text-light;
+        color: $bg-dark;
+        text-decoration: none;
+        font-weight: 700;
+        border-radius: 30px;
+        transition: transform 0.3s ease, background 0.3s ease;
+
+        &:hover {
+            background: $gold-hover;
+            transform: translateY(-3px);
+        }
+    }
+}
+
+
+
+
+
+
+.wishes {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    text-align: center;
+
+    &__heading {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 24px;
+    }
+}
+
+
+
+
+.wish-card {
+    @include glass-effect(0.05);
+    padding: 30px 24px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-5px);
+        border-color: rgba($text-light, 0.5);
+    }
+
+    h3 {
+        color: $text-light;
+        font-size: 1.3rem;
+        margin-bottom: 12px;
+    }
+
+    p {
+        color: $text-muted;
+        font-size: 0.95rem;
+    }
+}
+
+
+
+
+.footer {
+    text-align: center;
+    padding: 30px;
+    color: $text-muted;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
